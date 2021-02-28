@@ -1,0 +1,44 @@
+# ------------------------------------
+# GutHub Action 
+#
+# Copyleft (c) by Roman Goryachev 2021
+#-------------------------------------
+
+name: Testing-Dual-Illusion
+
+# Controls when the action will run. 
+on:
+  push:
+    branches: 
+      - master
+      
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  my_testing:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Print Hello
+      run: echo "Hello Roman Testing"
+
+  
+    
+  my_deploy: 
+    runs-on: ubuntu-latest
+    steps:
+    - name: Print Hello
+      run: echo "Hello Roman Deploy"
+    
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+ 
+        
+        
