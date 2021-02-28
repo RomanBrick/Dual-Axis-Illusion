@@ -32,8 +32,7 @@ jobs:
         echo "Hello Message 2"
         echo "Application name: ${{ env.APPLICATION_NAME }}"
         
-    - name: Git clone my repo
-      uses: action/checkout@v1
+   
       
   my_testing:
     runs-on: ubuntu-latest
