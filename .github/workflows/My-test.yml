@@ -18,15 +18,17 @@ jobs:
   my_testing:
     runs-on: ubuntu-latest
     steps:
-    - name: Print Hello
+    - name: Print Hello from Testing
       run: echo "Hello Roman Testing"
 
   
     
   my_deploy: 
     runs-on: ubuntu-latest
+    needs: [my_testing]
+    
     steps:
-    - name: Print Hello
+    - name: Print Hello from Deploy
       run: echo "Hello Roman Deploy"
     
    
