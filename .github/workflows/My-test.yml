@@ -31,6 +31,9 @@ jobs:
         echo "Hello Message 1"
         echo "Hello Message 2"
         echo "Application name: ${{ env.APPLICATION_NAME }}"
+        
+    - name: Git clone my repo
+      uses: action/checkout@v1
       
   my_testing:
     runs-on: ubuntu-latest
@@ -51,6 +54,12 @@ jobs:
     - name: Deployment packages 
       run : |
         echo "Deployment packages: ${{ env.PACKAGE_NAME }}"
+        
+    - name: Lets test some packages if the are here 1
+      run: aws --version
+      
+    - name: Lets test some packages if the are here 1
+      run: zip --version 
       
     
    
