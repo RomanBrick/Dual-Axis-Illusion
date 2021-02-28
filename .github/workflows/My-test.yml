@@ -5,7 +5,10 @@
 #-------------------------------------
 
 name: Testing-Dual-Illusion
-
+env:
+  APPLICATION_NAME: 'MY-Illision'
+  PACKAGE_NAME    : 'My-Illision-version-${{ github.sha }}'
+  
 # Controls when the action will run. 
 on:
   push:
