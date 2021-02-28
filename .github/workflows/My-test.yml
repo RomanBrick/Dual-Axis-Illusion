@@ -20,14 +20,14 @@ jobs:
     needs: [my_testing]
     
     steps:
-    - name: Print Hello from Deploy
-      run: echo "Hello Roman Deploy"
+    - name: Print Hello from Work
+      run: echo "Hello Roman Work flow"
       
   my_testing:
     runs-on: ubuntu-latest
     steps:
     - name: Print Hello from Testing
-      run: echo "Hello Roman Testing"
+      run: echo "Hello Roman Testing flow"
 
   
     
@@ -37,7 +37,7 @@ jobs:
     
     steps:
     - name: Print Hello from Deploy
-      run: echo "Hello Roman Deploy"
+      run: echo "Hello Roman Deploy flow"
     
    
    
