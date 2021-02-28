@@ -26,6 +26,12 @@ jobs:
     - name: Print Hello from Work
       run: echo "Hello Roman Work flow"
       
+    - name: Execure few commands
+      run: |
+        echo "Hello Message 1"
+        echo "Hello Message 2"
+        echo "Application name: ${{ env.APPLICATION_NAME }}"
+      
   my_testing:
     runs-on: ubuntu-latest
     steps:
@@ -41,6 +47,11 @@ jobs:
     steps:
     - name: Print Hello from Deploy
       run: echo "Hello Roman Deploy flow"
+      
+    - name: Deployment packages 
+      run : |
+        echo "Deployment packages: ${{ env.PACKAGE_NAME }}"
+      
     
    
    
